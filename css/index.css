@@ -1,0 +1,72 @@
+html {
+	background: #ffe9cd;
+}
+
+body {
+    background: #fef5c4;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.parallax {
+    background-image: url("../img/bg.jpg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maintitle {
+    position: absolute;
+    left: 0;
+    top: 71%;
+    width: 100%;
+    text-align: center;
+	font-family: 'Pattaya', sans-serif;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+span {
+    background-color: #ffe9cd;
+}
+
+.booktitle {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+h2 {
+    font-size:1.7em; 
+    font-family: 'Lobster', cursive; 
+    letter-spacing: 1px; 
+    text-align:center;
+}
+
+h3 {
+    font-size:1.2em; 
+    font-family: 'Marmelad', sans-serif;
+    text-align:center;
+}
+
+.col {
+    text-align:center;
+}
+
+img .col span_1_of_3 {
+    border:1;
+}

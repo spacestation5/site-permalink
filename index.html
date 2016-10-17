@@ -1,9 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> </title>
-    </head>
-    <body>
 
-    </body>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Marmelad|Pattaya|Philosopher" rel="stylesheet">    
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/contactform.css" media="all">
+	<title>Володимир Герман - Персональна сторінка</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<div class="parallax">
+		<h1 class="maintitle" onclick="smoothScroll(document.getElementById('books'))">
+			<span>Володимир Герман<br>персональна сторінка</span>
+			<br>
+			<svg width="45" height="45" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1412 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zm252-1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
+		</h1>
+	</div>
+
+	<div class="section group" id="books">
+		<h2>Останні надходження</h3>
+	</div>
+
+		<div class="section group">
+			<div class="col span_1_of_3">
+				<p class="booktitle">Збірка<br>«Ангел Останній» (2012)</p>
+				<figure>
+					<img src="img/book.jpg" alt="Збірка «Ангел Останній» (2012)" width="198" height="320">
+				</figure>
+			</div>
+			<div class="col span_1_of_3">
+				<p class="booktitle">Збірка<br>«Сад Бажань» (2012)</p>
+				<figure>
+					<img src="img/book1.jpg" alt="Збірка «Сад Бажань» (2012)" width="198" height="320">
+					<figcaption><a href="#books"><h3>Ознайомитись<br><img src="img/book-icon1.png" alt="small book" height="50"></h3></a></figcaption>
+				</figure>		
+			</div>
+			<div class="col span_1_of_3">
+				<p class="booktitle">Вічна Нічлава. Троя неподоланна:<br>Стрілківці, Пищатинці, Висічка... (2017)</p>
+				<figure>
+					<img src="img/book2.jpg" alt="Вічна Нічлава. Троя неподоланна (готується до друку)" width="198" height="320">
+					<figcaption><a href="#books"><h3><em>Готується до друку...</em></h3></a></figcaption>
+				</figure>
+			</div>
+		</div>
+
+	<div class="section group">
+		<h2>Про автора</h3>
+	</div>
+
+		<h3><a href="https://uk.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Детальна біографія на «Вікіпедії»<br><img src="img/wikipedia-logo-v2-en.png" alt="Wikipedia Logo" height="130"></a></h3>
+
+	<div class="section group">
+		<h2>Надіслати листа</h3>
+	</div>
+
+		<div id="container">
+			<form action="https://formspree.io/10101@protonmail.ch" method="post" id="contact_form">
+				<div class="name">
+				    <label for="name"></label>
+				    <input type="text" placeholder="Ім'я" name="name" id="name_input" required>
+				</div>
+				<div class="email">
+				    <label for="email"></label>
+				    <input type="email" placeholder="Електронна пошта" name="_replyto" id="email_input" required>
+				</div>
+				<div class="subject">
+				    <label for="subject"></label>
+				    <select placeholder="Тема звернення" name="subject" id="subject_input" required>
+				        <option disabled hidden selected>Тема звернення</option>
+				        <option>Загальне</option>
+				        <option>Реалізація книг</option>
+				    </select>
+				</div>
+				<div class="message">
+				    <label for="message"></label>
+				    <textarea name="message" placeholder="Текст Вашого повідомлення" id="message_input" cols="30" rows="5" required></textarea>
+				</div>
+				<div class="submit">
+				     <input type="submit" value="Надіслати" id="form_button">
+				</div>
+			</form>
+		</div>
+
+	<br>
+
+</body>
 </html>
